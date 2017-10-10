@@ -1,0 +1,51 @@
+/* CSS para form */
+.input-submit{
+  float: right;
+  color: blueviolet;
+  background-color: #fff;
+  border-color: #ccc;
+  border-radius: 6px;
+  padding: 5px 10px;
+  border-style: double;
+  margin-right: 7px;
+}
+input {
+   transition:all linear 0.5s;
+ }
+input.ng-invalid.ng-touched {
+  transition:all linear 0.5s;
+    background-color: rgba(247, 65, 65, 0.42);;
+}
+
+/* CSS para logo */
+.border-logo{
+    border-radius: 19px;
+    background: linear-gradient(#00FF00, #08CF08);
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.54);
+}
+.logo-text{
+    color: rgba(253, 252, 252, 0.89);
+    font-size: 70px;
+    position: relative;
+    bottom: 25px;
+    left: 5px;
+    font-family: serif;
+}
+.logo-img{
+  float: right;
+  width: 90px;
+  position: relative;
+  bottom: 12px;
+  right: 15px;
+}
+
+/* CSS para Resultado */
+.texto-firma {
+    margin-bottom: 0px;
+}
+.green{
+  color:green;
+  font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="border-logo">
+                <span class="logo-text">Green Leaves</span>
+                <span class="logo-img">
+                <img src="public/img/leaf.svg" alt="logo-hoja">
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" ng-controller="resController">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Estimado <b>{{ forma.nombre }}</b></h3>
+            <br>
+            <p class="texto-res">
+                Hemos recibido sus datos y nos pondremos en contacto con usted a la brevedad posible. Enviaremos un correo con informacion
+                a su cuenta: {{ forma.email }}
+            </p>
+            
+            <p class="text-right texto-firma"><b>Atte.</b></p>
+            <p class="text-right green texto-firma">Green Leaves</p>
+            <p class="text-right texto-firma"><em>Monterrey, Nuevo Leon, Mexico a {{ forma.dt | date:'dd-MMMM-yyyy' }}</em></p>
+            
+        </div>
+    </div>
+</div>

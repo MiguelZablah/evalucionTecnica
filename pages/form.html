@@ -1,0 +1,58 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+        <div class="border-logo">
+            <span class="logo-text">Green Leaves</span>
+            <span class="logo-img">
+                <img src="public/img/leaf.svg" alt="logo-hoja">
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" ng-controller="DatepickerPopup">
+    <form class="form-horizontal col-md-6 col-sm-9" name="myform">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Nombre:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" ng-model="forma.nombre" name="nombre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">E-mail:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" ng-model="forma.email" name="email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Telefono:</label>
+            <div class="col-sm-10">
+                <input type="text" ng-pattern="/^(?=.*[0-9])[- +#()0-9]+$/" class="form-control" ng-model="forma.telefono" name="telefono" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Fecha:</label>
+            <div class="col-sm-10">
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="forma.dt" name="dt" is-open="popup1.opened" datepicker-options="dateOptions"
+                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats"/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="ciudad">Ciudad y Estado:</label>
+            <div class="col-sm-10">
+                <input id="ciudad" type="text" class="form-control" ng-model="forma.ciudad" placeholder="ingrese su cuidad" name="ciudad" required>
+                 Powered by <a href="http://geonames.org">geonames.org</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <input ng-disabled="myform.$invalid" class="input-submit" type="submit" value="Enviar" ng-click="changeView('resultado', forma)"/>
+        </div>
+    </form>
+     {{ forma | json }}
+</div>

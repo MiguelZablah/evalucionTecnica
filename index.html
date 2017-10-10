@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="formApp">
+
+<head>
+    <title>Green Leaves</title>
+    <link href="public/css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap, Fontawesome -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<!-- define angular controller -->
+
+<body ng-controller="mainController">
+
+    <div class="container">
+        <h1>Evalucion Tecnica</h1>
+    </div>
+
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+<!-- Angular -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+<script src="script.js"></script>
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="public/js/main.js"></script>
+</body>
+
+</html>
